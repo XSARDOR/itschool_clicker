@@ -1,0 +1,149 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .modal input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .modal button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+  
+  .coin-container {
+    margin: 20px 0;
+  }
+
+  #clicker-coin {
+    border: none;        
+    background: none;     
+    padding: 0;           
+    outline: none;       
+    cursor: pointer;      
+  }
+  
+  #clicker-coin img {
+    width: 200px;         
+    height: 200px;       
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5)); 
+  }
+  
+  
+  #clicker-coin img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 50%; 
+    user-select: none;
+  }
+  
+  #clicker-coin img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  #clicker-coin {
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  #clicker-coin img {
+    width: 200px;
+    height: 200px;
+    user-select: none; /* Disable selection on the image */
+    transform: scale(1); /* Ensure no scaling */
+    transition: transform 0.2s ease-out; /* Optional for smooth transition */
+  }
+  
+  #clicker-coin img:hover {
+    transform: scale(1); /* Ensure no scaling on hover */
+  }
+  
+  
+  p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  #emoji-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .emoji {
+    position: absolute;
+    font-size: 24px;
+    animation: fade 1s forwards;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
+  
