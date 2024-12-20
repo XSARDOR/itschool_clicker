@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uchburchakning Yuzi</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Uchburchakning yuzi</h1>
+        <div class="content">
+            <div class="diagram">
+                <img src="triangle-diagram.png" alt="Uchburchakning chizmasi">
+            </div>
+            <div class="formula-section">
+                <p>Formula: <span>S = 1/2 × b × h</span></p>
+            </div>
+            <div class="inputs-section">
+                <label for="base">b ni kiriting:</label>
+                <input type="number" id="base" placeholder="Asosni kiriting">
+
+                <label for="height">h ni kiriting:</label>
+                <input type="number" id="height" placeholder="Balandlikni kiriting">
+
+                <button onclick="calculateArea()">Hisoblash</button>
+            </div>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
